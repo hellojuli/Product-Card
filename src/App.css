@@ -1,38 +1,130 @@
 .App {
   text-align: center;
+  width: 100vw;
+  height: 100vh;
+  background: #E5E5E5;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.flex-div {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-evenly;
+  position: absolute;
+  top: 0; bottom: 0;
+  left: 0; right: 0;
+  margin: auto;
 }
 
-.App-link {
-  color: #61dafb;
+.Card{
+  width: 304px;
+  height: 568px;
+  background: #FFFFFF;
+  border-radius: 8px;
+  top: 0; bottom: 0;
+  left: 0; right: 0;
+  margin: auto;
+  box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.08);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Card  .product-img {
+  position: relative;
+  padding-top: 32px;
+  margin-bottom: 32px;
+}
+
+.wishlist-div {
+  position: relative;
+}
+
+.Card  .wishlist-img {
+  position: absolute;
+  margin-top: -17.3rem;
+  margin-left: 4.5rem;
+}
+
+.wishlist-div .wishlist-active {
+  visibility: hidden;
+  opacity: 0;
+  position:absolute;
+  margin-top: -17.3rem;
+  margin-left: 4.5rem;
+}
+
+.wishlist-div:hover .wishlist-active {
+  visibility: visible;
+  opacity: 1;
+}
+
+.Card .title h1 {
+  font-style: bold !important;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+
+  text-align: justify;
+  margin: 0 auto;
+  width: 240px;
+  height: 60px;
+
+  color: #1C1C1C;
+}
+
+.Card .info {
+  text-align: justify;
+  padding-left: 32px;
+}
+
+.Card .info h2 {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  text-decoration-line: line-through;
+  padding-top: 1rem;
+  margin-bottom: -.5rem; 
+
+  color: #B5B5B6;
+}
+
+.Card .info h1 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  margin-bottom: -.5rem; 
+
+  color: #DA4B4F;
+}
+
+.Card .info h3 {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  margin-bottom: 2rem; 
+
+  color: #848587;
+}
+
+.Card .info span {
+  color: #1C1C1C !important;
+}
+
+.add-button {
+  width: 240px;
+  height: 48px;
+  background: #40B25C;
+  border-radius: 5px;
+  border: none;
+
+  color: #FFFFFF;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  text-transform: uppercase;
+
+  cursor: pointer;
+}
+
+.add-button:hover {
+  background: #1C6C3E !important;
 }
