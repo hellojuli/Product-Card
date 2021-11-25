@@ -7,6 +7,9 @@ const WishButton = (product) => {
   const [ bgColor] = React.useState('#40B25C');
   const [textColor ] = React.useState('#FFFFFF');
 
+  const [ bgColorAfter] = React.useState('#A3F9B9');
+  const [textColorAfter ] = React.useState('#1C1C1C');
+
  function handleCheck(e, id) {
     e.preventDefault();
     setCheck(id);
@@ -25,8 +28,8 @@ const WishButton = (product) => {
         className="add-button"
         onClick={handleUnchecked}
         style={{
-            backgroundColor: bgColor,
-            color: textColor,
+            backgroundColor: bgColorAfter,
+            color: textColorAfter,
         }}
         >
         <img src={checkedIconImg} alt="checked" className="c" />
