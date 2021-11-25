@@ -1,7 +1,7 @@
 .App {
   text-align: center;
   width: 100vw;
-  height: 100vh;
+  height: 100vh !important;
   background: #E5E5E5;
 }
 
@@ -146,4 +146,11 @@
 
 .add-button:hover {
   background: #1C6C3E !important;
+}
+
+.App {
+  text-align: center;
+  width: 100vw;
+  height: 100vh !important;
+  background: #E5E5E5;
 }
